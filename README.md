@@ -3,7 +3,11 @@ Apache RP
 
 ## Build de l'image
 ```bash
-$ docker build --rm --name thanh/rp --build-arg http_proxy=${env.http_proxy}  --build-arg https_proxy=${env.https_proxy} --build-arg HTTP_PROXY=${env.http_proxy} --build-arg HTTPS_PROXY=${env.https_proxy}  docker
+$ docker build --rm -t thanh/rp --build-arg http_proxy=${env.http_proxy}  --build-arg https_proxy=${env.https_proxy} --build-arg HTTP_PROXY=${env.http_proxy} --build-arg HTTPS_PROXY=${env.https_proxy}  docker
+```
+
+```bash
+$ docker build --rm -t thanh/rp  docker
 ```
 
 
